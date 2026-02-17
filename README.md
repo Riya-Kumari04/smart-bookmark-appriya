@@ -55,8 +55,8 @@ npm run dev
 
 # 6️⃣ Open your browser and visit
 # http://localhost:3000
-
-##  💡 Challenges Faced & Solutions
+---
+## 💡 Challenges Faced & Solutions
 
 | Challenge | Solution |
 |-----------|---------|
