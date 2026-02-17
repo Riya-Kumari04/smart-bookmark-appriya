@@ -33,6 +33,18 @@ The app is deployed live on **Vercel**.
 
 ---
 
+## 💡 Challenges Faced & Solutions
+
+| Challenge | Solution |
+|-----------|---------|
+| Wrong project root folder | Navigated to the folder containing `package.json` before running Git or npm commands |
+| Supabase POST errors (Bad Request) | Added `.env.local` with correct `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` |
+| Vercel build error (`supabaseUrl is required`) | Added environment variables in Vercel Project Settings → Redeployed |
+| React state not updating after CRUD operations | Correctly updated React state after insert/delete to trigger re-render |
+| Git push confusion | Verified project root folder and initialized Git there |
+
+---
+
 ## 📦 Project Setup Instructions
 # 1️⃣ Clone the repository
 git clone <YOUR_REPO_URL>
@@ -53,13 +65,3 @@ npm run dev
 
 # 6️⃣ Open your browser and visit
 # http://localhost:3000
----
-## 💡 Challenges Faced & Solutions
-
-# | Challenge | Solution |
-# |-----------|---------|
-# | Wrong project root folder | Navigated to the folder containing `package.json` before running Git or npm commands |
-# | Supabase POST errors (Bad Request) | Added `.env.local` with correct `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` |
-# | Vercel build error (`supabaseUrl is required`) | Added environment variables in Vercel Project Settings → Redeployed |
-# | React state not updating after CRUD operations | Correctly updated React state after insert/delete to trigger re-render |
-# | Git push confusion | Verified project root folder and initialized Git there |
