@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Bookmark App
 
-## Getting Started
+A web-based bookmark manager built with **Next.js (App Router)** and **Supabase**.  
+Users can **add, view, and delete bookmarks**, with real-time updates and secure data storage.  
+The app is deployed live on **Vercel**.
 
-First, run the development server:
+---
+
+## 🌟 Live Demo
+
+[Smart Bookmark App on Vercel](https://smart-bookmark-appriya.vercel.app/)
+
+---
+
+## 🛠 Technologies Used
+
+- **Frontend / Framework:** Next.js (App Router)  
+- **Backend / Database:** Supabase  
+- **State Management:** React useState / Context API  
+- **Version Control:** Git + GitHub  
+- **Deployment:** Vercel  
+- **Languages:** TypeScript, JavaScript, HTML, CSS  
+
+---
+
+## 🚀 Features
+
+- Add bookmarks (URL, title, description)  
+- View all saved bookmarks  
+- Delete unwanted bookmarks  
+- Real-time updates using React state management  
+- Responsive design for mobile and desktop  
+
+---
+
+## 📦 Project Setup Instructions
 
 ```bash
+# 1️⃣ Clone the repository
+git clone <YOUR_REPO_URL>
+
+# 2️⃣ Go to the project folder
+cd smart-bookmark-app
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Create a `.env.local` file in the root folder and add environment variables
+# Open `.env.local` in a text editor and paste the following:
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# 5️⃣ Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 6️⃣ Open your browser and visit
+# http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💡 Challenges Faced & Solutions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Challenge | Solution |
+|-----------|---------|
+| Wrong project root folder | Navigated to the folder containing `package.json` before running Git or npm commands |
+| Supabase POST errors (Bad Request) | Added `.env.local` with correct `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` |
+| Vercel build error (`supabaseUrl is required`) | Added environment variables in Vercel Project Settings → Redeployed |
+| React state not updating after CRUD operations | Correctly updated React state after insert/delete to trigger re-render |
+| Git push confusion | Verified project root folder and initialized Git there |
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
