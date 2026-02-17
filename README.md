@@ -1,7 +1,6 @@
 # Smart Bookmark App
 
-A web-based bookmark manager built with **Next.js (App Router)** and **Supabase**.  
-Users can **add, view, and delete bookmarks**, with real-time updates and secure data storage.  
+A web-based bookmark manager built with **Next.js (App Router)** and **Supabase**.  Users can **add, view, and delete bookmarks**, with real-time updates and secure data storage.  
 The app is deployed live on **Vercel**.
 
 ---
@@ -46,6 +45,7 @@ The app is deployed live on **Vercel**.
 ---
 
 ## 📦 Project Setup Instructions
+
 # 1️⃣ Clone the repository
 git clone <YOUR_REPO_URL>
 
