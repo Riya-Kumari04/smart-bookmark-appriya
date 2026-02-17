@@ -65,4 +65,3 @@ npm run dev
 | Vercel build error (`supabaseUrl is required`) | Added environment variables in Vercel Project Settings → Redeployed |
 | React state not updating after CRUD operations | Correctly updated React state after insert/delete to trigger re-render |
 | Git push confusion | Verified project root folder and initialized Git there |
-
